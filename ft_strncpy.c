@@ -22,7 +22,7 @@ char	*ft_strncpy(char *dest, const char *src, size_t n)
 	{
 		dest[index] = src[index];
 		if (!src[index])
-			break;
+			break ;
 		index++;
 	}
 	if (index < n)

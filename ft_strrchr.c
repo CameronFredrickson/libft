@@ -1,30 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memset.c                                           :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/21 10:17:10 by cfredric          #+#    #+#             */
-/*   Updated: 2016/09/21 10:17:11 by cfredric         ###   ########.fr       */
+/*   Created: 2016/09/23 19:06:07 by cfredric          #+#    #+#             */
+/*   Updated: 2016/09/23 19:06:08 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
-void	*ft_memset(void *str, int c, size_t n)
+char	*ft_strrchr(const char *s, int c)
 {
-	char	*new;
+	char	*new_str;
 	int		index;
+	int		find_flag;
 
-	new = (char *)str;
-	index = 0;
-	while (n)
+	new_str = (char *)s;
+	index = ft_strlen(s) + 1;
+	find_flag = 0;
+	while (index > 0)
 	{
-		new[index] = (char)c;
-		index++;
-		n--;
+		index--;
+		if (new_str[index] == c)
+		{
+			find_flag = 1;
+			break ;
+		}
 	}
-	return (str);
+	if (!find_flag)
+	{
+		new_str = NULL;
+		return (new_str);
+	}
+	return (new_str + index);
 }

@@ -14,13 +14,15 @@ NAME = libft
 
 SOURCE  = ft_memset.c ft_strlen.c ft_strdup.c ft_strcpy.c ft_strcat.c \
 ft_strncat.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
-ft_isprint.c ft_toupper.c ft_tolower.c ft_bzero.c ft_memcpy.c
+ft_isprint.c ft_toupper.c ft_tolower.c ft_bzero.c ft_memcpy.c ft_strchr.c \
+ft_strrchr.c
 
 HEADER = libft.h
 
 OBJS = ft_memset.o ft_strlen.o ft_strdup.o ft_strcpy.o ft_strcat.o \
 ft_strncat.o ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o \
-ft_isprint.o ft_toupper.o ft_tolower.o ft_bzero.o ft_memcpy.o
+ft_isprint.o ft_toupper.o ft_tolower.o ft_bzero.o ft_memcpy.o ft_strchr.o \
+ft_strrchr.o
 
 CC = gcc
 
