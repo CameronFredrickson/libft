@@ -1,28 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/21 10:40:55 by cfredric          #+#    #+#             */
-/*   Updated: 2016/09/21 10:40:56 by cfredric         ###   ########.fr       */
+/*   Created: 2016/09/22 20:36:29 by cfredric          #+#    #+#             */
+/*   Updated: 2016/09/22 20:36:29 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-	size_t	count;
-	int		index;
+	unsigned char	*dest_str;
+	unsigned char	*src_str;
+	size_t			index;
+	unsigned char	new_c;
+	int				flag;
 
-	count = 0;
+	dest_str = (unsigned char *)dest;
+	src_str = (unsigned char *)src;
 	index = 0;
-	while (str[index])
+	new_c = (unsigned char)c;
+	flag = 0;
+	while (index < n)
 	{
-		count++;
+		dest_str[index] = src_str[index];
+		if (src_str[index] == c)
+		{
+			flag = 1;
+			break ;
+		}
 		index++;
 	}
-	return (count);
+	(flag) ? (dest += (index + 1)) : (dest = NULL);
+	return (dest);
 }

@@ -11,20 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memset(void *str, int c, size_t n)
 {
-	char	*new;
-	int		index;
+	unsigned char	*new;
+	size_t			index;
 
-	new = (char *)str;
+	new = (unsigned char *)str;
 	index = 0;
-	while (n)
+	while (index < n)
 	{
 		new[index] = (char)c;
 		index++;
-		n--;
 	}
 	return (str);
 }

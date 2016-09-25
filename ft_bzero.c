@@ -10,22 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*cast;
-	int		index;
-
-	if (!n)
-		return ;
-	cast = (char *)s;
-	index = 0;
-	while (n)
-	{
-		cast[index++] = '\0';
-		n--;
-	}
-	s = cast;
+	ft_memset(s, 0, n);
 }
