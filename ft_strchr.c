@@ -14,19 +14,24 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*new_str;
-	int		index;
+	char			*new_str;
+	size_t			index;
+	size_t			flag;
+	size_t			len;
 
+	flag = 0;
+	len = ft_strlen(s);
 	new_str = (char *)s;
 	index = 0;
-	while (new_str[index] != c)
+	while (index < len)
 	{
-		if (!new_str[index])
+		if (new_str[index] == c)
 		{
-			new_str = NULL;
+			flag = 1;
 			break ;
 		}
 		index++;
 	}
-	return (new_str + index);
+	(flag) ? (new_str + index) : (new_str = NULL);
+	return (new_str);
 }

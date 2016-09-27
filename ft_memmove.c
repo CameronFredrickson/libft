@@ -6,21 +6,35 @@
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/24 14:04:41 by cfredric          #+#    #+#             */
-/*   Updated: 2016/09/24 14:04:42 by cfredric         ###   ########.fr       */
+/*   Updated: 2016/09/26 16:52:35 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, void *src, size_t len)
+static void		*reverse_memcpy(void *dest, void *src, size_t len)
 {
-	unsigned char	*tmp_mem;
+	size_t			index;
+	unsigned char	*dest_cast;
+	unsigned char	*src_cast;
 
-	if (!dest || !src)
-		return (NULL);
-	tmp_mem = malloc(sizeof(*src) * len);
-	ft_memcpy(tmp_mem, src, len);
-	ft_memcpy(dest, tmp_mem, len);
-	free(tmp_mem);
-	return (dest);
+	index = 0;
+	dest_cast = (unsigned char *)dest;
+	src_cast = (unsigned char *)src;
+	dest_cast += len - 1;
+	src_cast += len - 1;
+	while (index < len)
+	{
+		*dest_cast-- = *src_cast--;
+		index++;
+	}
+	return ((void *)dest);
+}
+
+void			*ft_memmove(void *dest, void *src, size_t len)
+{
+	if (dest > src)
+		return (reverse_memcpy(dest, src, len));
+	else
+		return (ft_memcpy(dest, src, len));
 }
