@@ -14,20 +14,19 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
+	unsigned char	*s_cast;
 	unsigned char	chr;
-	unsigned char	*cast;
 	size_t			index;
 
+	s_cast = (unsigned char *)s;
 	chr = (unsigned char)c;
-	cast = (unsigned char *)s;
 	index = 0;
 	while (index < n)
 	{
-		if (*cast == chr)
-			return ((void *)cast);
+		if (*s_cast == chr)
+			return ((void *)s_cast);
+		s_cast++;
 		index++;
-		cast++;
 	}
-	cast = NULL;
-	return ((void *)cast);
+	return (NULL);
 }
