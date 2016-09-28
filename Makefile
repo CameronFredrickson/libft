@@ -6,7 +6,7 @@
 #    By: cfredric <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/21 09:35:23 by cfredric          #+#    #+#              #
-#    Updated: 2016/09/28 10:25:53 by cfredric         ###   ########.fr        #
+#    Updated: 2016/09/28 10:34:29 by cfredric         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SOURCE  = 	ft_memset.c		ft_memalloc.c	\
 			ft_memmove.c	ft_strclr.c		\
 			ft_memchr.c		ft_striter.c	\
 			ft_memcmp.c		ft_striteri.c	\
-			ft_strlen.c		\
+			ft_strlen.c		ft_strmap.c		\
 			ft_strdup.c		\
 			ft_strcpy.c		\
 			ft_strncpy.c	\
