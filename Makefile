@@ -29,6 +29,7 @@ SOURCE  = 	ft_memset.c		\
 			ft_strchr.c		\
 			ft_strrchr.c	\
 			ft_strstr.c		\
+			ft_strnstr.c	\
 			ft_strcmp.c		\
 			ft_strncmp.c	\
 			ft_atoi.c		\
