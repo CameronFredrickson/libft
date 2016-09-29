@@ -12,8 +12,8 @@
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char
-		(*f)(unsigned int, char))
+char	*ft_strmapi(char const *s,
+					char (*f)(unsigned int, char))
 {
 	char			*new;
 	unsigned int	i;
@@ -26,6 +26,5 @@ char	*ft_strmapi(char const *s, char
 		new[i] = f(s[i], i);
 		i++;
 	}
-	return (new);	
+	return (new);
 }
-

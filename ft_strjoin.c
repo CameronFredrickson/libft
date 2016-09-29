@@ -20,6 +20,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	ft_strcpy(cat, s1);
 	ft_strcat(cat, s2);
-	return (cat);	
+	return (cat);
 }
-
