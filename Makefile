@@ -6,14 +6,14 @@
 #    By: cfredric <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/21 09:35:23 by cfredric          #+#    #+#              #
-#    Updated: 2016/09/30 16:02:34 by cfredric         ###   ########.fr        #
+#    Updated: 2016/10/01 10:08:57 by cfredric         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft
 
-SOURCE  = 	ft_memset.c		ft_memalloc.c	\
-			ft_bzero.c		ft_memdel.c		\
+SOURCE  = 	ft_memset.c		ft_memalloc.c	ft_lstnew.c		\
+			ft_bzero.c		ft_memdel.c		ft_lstdelone.c	\
 			ft_memcpy.c		ft_strnew.c		\
 			ft_memccpy.c	ft_strdel.c		\
 			ft_memmove.c	ft_strclr.c		\
