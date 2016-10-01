@@ -22,7 +22,7 @@ static int		int_len(long n)
 		count++;
 		n /= 10;
 	}
-	return count;
+	return (count);
 }
 
 void			ft_putnbr(int n)

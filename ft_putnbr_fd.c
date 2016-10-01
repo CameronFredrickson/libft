@@ -22,7 +22,7 @@ static int		int_len(long n)
 		count++;
 		n /= 10;
 	}
-	return count;
+	return (count);
 }
 
 static void		ft_putnbr_mod(int n, int fd)
@@ -51,7 +51,7 @@ static void		ft_putnbr_mod(int n, int fd)
 	ft_putstr_fd(buf, fd);
 }
 
-void	ft_putnbr_fd(int n, int fd)
+void			ft_putnbr_fd(int n, int fd)
 {
 	ft_putnbr_mod(n, fd);
 }
