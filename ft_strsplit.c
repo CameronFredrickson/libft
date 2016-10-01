@@ -46,7 +46,7 @@ static int		str_alloc(char const *s, char c, char **arr)
 
 	arr_i = 0;
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		str_i = 0;
 		if (s[i] != c)

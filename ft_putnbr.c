@@ -1,56 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/29 14:12:57 by cfredric          #+#    #+#             */
-/*   Updated: 2016/09/30 16:13:30 by cfredric         ###   ########.fr       */
+/*   Created: 2016/09/30 15:52:24 by cfredric          #+#    #+#             */
+/*   Updated: 2016/09/30 16:27:15 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	int_len(int n)
+static int		int_len(long n)
 {
-	size_t	len;
+	int		count;
 
-	len = 0;
-	if (n <= 0)
-		len++;
+	count = 0;
 	while (n)
 	{
-		len++;
+		count++;
 		n /= 10;
 	}
-	return (len);
+	return count;
 }
 
-char			*ft_itoa(int n)
+void			ft_putnbr(int n)
 {
-	char		*result;
-	size_t		index;
-	long		new_n;
+	long			new_n;
+	char			buf[0x7F];
+	int	unsigned	index;
 
 	new_n = (long)n;
-	index = int_len(new_n);
-	result = ft_strnew(index);
-	if (!result)
-		return (NULL);
-	index--;
+	index = int_len(new_n) - 1;
+	ft_strclr(buf);
+	if (new_n == 0)
+		ft_putchar('0');
 	if (new_n < 0)
 	{
-		result[0] = '-';
+		ft_putchar('-');
 		new_n *= -1;
 	}
-	if (new_n == 0)
-		result[0] = '0';
-	while (new_n)
+	while (index > 0)
 	{
-		result[index] = new_n % 10 + '0';
+		buf[index] = (char)((new_n % 10) + '0');
 		new_n /= 10;
 		index--;
 	}
-	return (result);
+	buf[index] = (char)((new_n % 10) + '0');
+	ft_putstr(buf);
 }

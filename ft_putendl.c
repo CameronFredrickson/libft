@@ -27,4 +27,3 @@ void	ft_putendl(char const *s)
 	c = '\n';
 	write(1, &c, 1);
 }
-

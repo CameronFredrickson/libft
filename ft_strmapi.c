@@ -18,12 +18,13 @@ char	*ft_strmapi(char const *s,
 	char			*new;
 	unsigned int	i;
 
-	if (!(new = ft_strnew(ft_strlen(s))))
+	new = ft_strnew(ft_strlen(s));
+	if (!new)
 		return (NULL);
 	i = 0;
 	while (s[i])
 	{
-		new[i] = f(s[i], i);
+		new[i] = f(i, s[i]);
 		i++;
 	}
 	return (new);

@@ -6,7 +6,7 @@
 #    By: cfredric <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/21 09:35:23 by cfredric          #+#    #+#              #
-#    Updated: 2016/09/29 16:03:35 by cfredric         ###   ########.fr        #
+#    Updated: 2016/09/30 16:02:34 by cfredric         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,11 +31,11 @@ SOURCE  = 	ft_memset.c		ft_memalloc.c	\
 			ft_strstr.c		ft_putchar.c	\
 			ft_strnstr.c	ft_putstr.c		\
 			ft_strcmp.c		ft_putendl.c	\
-			ft_strncmp.c	\
-			ft_atoi.c		\
-			ft_isalpha.c	\
-			ft_isdigit.c	\
-			ft_isalnum.c	\
+			ft_strncmp.c	ft_putnbr.c		\
+			ft_atoi.c		ft_putchar_fd.c	\
+			ft_isalpha.c	ft_putstr_fd.c	\
+			ft_isdigit.c	ft_putendl_fd.c	\
+			ft_isalnum.c	ft_putnbr_fd.c	\
 			ft_isascii.c	\
 			ft_isprint.c	\
 			ft_toupper.c	\
