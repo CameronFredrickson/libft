@@ -6,7 +6,7 @@
 #    By: cfredric <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/21 09:35:23 by cfredric          #+#    #+#              #
-#    Updated: 2016/10/01 10:08:57 by cfredric         ###   ########.fr        #
+#    Updated: 2016/10/01 10:42:13 by cfredric         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,10 +14,10 @@ NAME = libft
 
 SOURCE  = 	ft_memset.c		ft_memalloc.c	ft_lstnew.c		\
 			ft_bzero.c		ft_memdel.c		ft_lstdelone.c	\
-			ft_memcpy.c		ft_strnew.c		\
-			ft_memccpy.c	ft_strdel.c		\
-			ft_memmove.c	ft_strclr.c		\
-			ft_memchr.c		ft_striter.c	\
+			ft_memcpy.c		ft_strnew.c		ft_lstdel.c		\
+			ft_memccpy.c	ft_strdel.c		ft_lstadd.c		\
+			ft_memmove.c	ft_strclr.c		ft_lstiter.c	\
+			ft_memchr.c		ft_striter.c	ft_lstmap.c		\
 			ft_memcmp.c		ft_striteri.c	\
 			ft_strlen.c		ft_strmap.c		\
 			ft_strdup.c		ft_strmapi.c	\
