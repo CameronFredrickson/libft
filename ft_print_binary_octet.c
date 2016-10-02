@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_print_binary.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/28 09:20:49 by cfredric          #+#    #+#             */
-/*   Updated: 2016/09/28 09:24:11 by cfredric         ###   ########.fr       */
+/*   Created: 2016/10/01 22:29:42 by cfredric          #+#    #+#             */
+/*   Updated: 2016/10/01 22:29:43 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t size)
+void	ft_print_binary_octet(unsigned char octet)
 {
-	char	*alloc;
+	char	bit;
 
-	alloc = (char *)malloc(sizeof(char) * (size + 1));
-	if (!alloc)
-		return (NULL);
-	ft_memset(alloc, 0, size + 1);
-	return (alloc);
+	bit = 7;
+	while (bit >= 0)
+	{
+		if (octet & 1 << bit)
+			ft_putchar('1');
+		else
+			ft_putchar('0');
+		ft_putchar(' ');
+		bit--;
+	}
+	ft_putchar('\n');
 }

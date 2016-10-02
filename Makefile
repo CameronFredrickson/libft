@@ -12,17 +12,17 @@
 
 NAME = libft
 
-SOURCE  = 	ft_memset.c		ft_memalloc.c	ft_lstnew.c		\
-			ft_bzero.c		ft_memdel.c		ft_lstdelone.c	\
-			ft_memcpy.c		ft_strnew.c		ft_lstdel.c		\
-			ft_memccpy.c	ft_strdel.c		ft_lstadd.c		\
-			ft_memmove.c	ft_strclr.c		ft_lstiter.c	\
-			ft_memchr.c		ft_striter.c	ft_lstmap.c		\
-			ft_memcmp.c		ft_striteri.c	\
-			ft_strlen.c		ft_strmap.c		\
-			ft_strdup.c		ft_strmapi.c	\
-			ft_strcpy.c		ft_strequ.c		\
-			ft_strncpy.c	ft_strnequ.c	\
+SOURCE  = 	ft_memset.c		ft_memalloc.c	ft_lstnew.c				\
+			ft_bzero.c		ft_memdel.c		ft_lstdelone.c			\
+			ft_memcpy.c		ft_strnew.c		ft_lstdel.c				\
+			ft_memccpy.c	ft_strdel.c		ft_lstadd.c				\
+			ft_memmove.c	ft_strclr.c		ft_lstiter.c			\
+			ft_memchr.c		ft_striter.c	ft_lstmap.c				\
+			ft_memcmp.c		ft_striteri.c							\
+			ft_strlen.c		ft_strmap.c		ft_isspace.c			\
+			ft_strdup.c		ft_strmapi.c	ft_intlen.c				\
+			ft_strcpy.c		ft_strequ.c		ft_setbit.c				\
+			ft_strncpy.c	ft_strnequ.c	ft_print_binary_octet.c	\
 			ft_strcat.c		ft_strsub.c		\
 			ft_strncat.c	ft_strjoin.c	\
 			ft_strlcat.c	ft_strtrim.c	\
