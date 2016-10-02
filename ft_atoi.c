@@ -15,7 +15,7 @@
 static	int	ft_isspace(int c)
 {
 	if (c == '\t' || c == '\n' || c == '\v' ||
-		c == '\r' || c == '\f' || c == ' ')
+		c == '\r' || c == '\f' || c == ' ' || c == 0)
 		return (1);
 	return (0);
 }
@@ -29,10 +29,10 @@ static	int	int_len(const char *str, int start)
 
 static int	convert(const char *str, int start)
 {
-	int		mult;
-	long	result;
-	int		len;
-	int		digit;
+	int			mult;
+	long long	result;
+	int			len;
+	int			digit;
 
 	mult = 1;
 	result = 0;
@@ -63,5 +63,13 @@ int			ft_atoi(const char *str)
 	else
 		result = 1;
 	result *= convert(str, start);
+	if (result > 2147783647)
+		return (-1);
+	if (result < -2147783648)
+		return (0);
+	if (int_len(str, start) > 10 && str[start] == '-')
+		return (0);
+	if (int_len(str, start) > 10 && ft_isdigit(str[start]) && str[start] != 0)
+		return (-1);
 	return (result);
 }

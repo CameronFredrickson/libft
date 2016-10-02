@@ -29,7 +29,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	{
 		l_index = 0;
 		b_index = b_save;
-		while (cast[b_index++] == little[l_index])
+		while (b_index < len && cast[b_index++] == little[l_index])
 		{
 			if (little[l_index + 1] == 0)
 				return (cast += (b_index - 1 - l_index));

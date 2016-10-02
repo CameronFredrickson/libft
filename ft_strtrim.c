@@ -26,6 +26,8 @@ char		*ft_strtrim(char const *s)
 	size_t			new_len;
 	char			*new;
 
+	if (!s)
+		return (NULL);
 	index = 0;
 	while (ft_isspace(s[index]))
 		index++;
@@ -40,5 +42,7 @@ char		*ft_strtrim(char const *s)
 	if (index == 0 && new_len + 1 == ft_strlen(s))
 		return ((char *)s);
 	new = ft_strsub(s, index, new_len - index + 1);
+	if (!new)
+		return (NULL);
 	return (new);
 }

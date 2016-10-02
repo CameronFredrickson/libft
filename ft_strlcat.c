@@ -17,8 +17,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	append;
 	size_t	index;
 	size_t	dst_strt;
+	size_t	src_len;
 
 	dst_strt = ft_strlen(dst);
+	src_len = ft_strlen(src);
 	if (dst_strt < size)
 	{
 		append = size - dst_strt - 1;
@@ -26,13 +28,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		index = 0;
 		while (index < append)
 		{
-			*dst = *src;
+			*dst++ = *src++;
 			index++;
-			dst++;
-			src++;
 		}
 		*dst = '\0';
-		return (dst_strt += (1 + ft_strlen(src)));
+		return (dst_strt += src_len);
 	}
 	return (ft_strlen(src) + size);
 }

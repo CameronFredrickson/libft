@@ -39,7 +39,7 @@ SOURCE  = 	ft_memset.c		ft_memalloc.c	ft_lstnew.c		\
 			ft_isascii.c	\
 			ft_isprint.c	\
 			ft_toupper.c	\
-			ft_tolower.c	\
+			ft_tolower.c
 
 HEADER = libft.h
 
