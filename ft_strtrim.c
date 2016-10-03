@@ -20,6 +20,15 @@ static int	f_isspace(int c)
 	return (0);
 }
 
+static char	*alloc_cpy(char const *s)
+{
+	char	*new;
+
+	new = ft_strnew(ft_strlen(s));
+	strcpy(new, s);
+	return (new);
+}
+
 char		*ft_strtrim(char const *s)
 {
 	unsigned int	index;
@@ -40,7 +49,7 @@ char		*ft_strtrim(char const *s)
 	while (f_isspace(s[new_len]))
 		new_len--;
 	if (index == 0 && new_len + 1 == ft_strlen(s))
-		return ((char *)s);
+		return (alloc_cpy(s));
 	new = ft_strsub(s, index, new_len - index + 1);
 	if (!new)
 		return (NULL);

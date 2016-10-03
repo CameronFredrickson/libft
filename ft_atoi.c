@@ -67,9 +67,5 @@ int			ft_atoi(const char *str)
 		return (-1);
 	if (result < -2147783648)
 		return (0);
-	if (int_len(str, start) > 10 && str[start] == '-')
-		return (0);
-	if (int_len(str, start) > 10 && ft_isdigit(str[start]) && str[start] != 0)
-		return (-1);
 	return (result);
 }

@@ -1,33 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_reverse_str.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/26 22:52:17 by cfredric          #+#    #+#             */
-/*   Updated: 2016/09/26 22:52:19 by cfredric         ###   ########.fr       */
+/*   Created: 2016/10/02 15:19:46 by cfredric          #+#    #+#             */
+/*   Updated: 2016/10/02 15:19:54 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_reverse_str(char *s)
 {
-	unsigned char	*cast1;
-	unsigned char	*cast2;
+	size_t		swaps;
+	size_t		index;
+	size_t		end;
+	char		temp;
 
-	cast1 = (unsigned char *)s1;
-	cast2 = (unsigned char *)s2; 
-	while (n > 0)
+	end = ft_strlen(s) - 1;
+	swaps = ft_strlen(s) / 2;
+	index = 0;
+	if (!s)
+		return (NULL);
+	while (index < swaps)
 	{
-		if (*cast1 != *cast2)
-			return ((int)(*cast1 - *cast2));
-		if (!*cast1 && !*cast2)
-			return (0);
-		cast1++;
-		cast2++;
-		n--;
+		temp = s[index];
+		s[index] = s[end];
+		s[end] = temp;
+		index++;
+		end--;
 	}
-	return (0);
+	return (s);
 }
