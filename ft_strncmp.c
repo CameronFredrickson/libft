@@ -18,7 +18,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	unsigned char	*cast2;
 
 	cast1 = (unsigned char *)s1;
-	cast2 = (unsigned char *)s2; 
+	cast2 = (unsigned char *)s2;
 	while (n > 0)
 	{
 		if (*cast1 != *cast2)
