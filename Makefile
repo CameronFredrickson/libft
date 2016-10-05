@@ -65,6 +65,10 @@ clean:
 	/bin/rm -f $(OBJS)
 
 fclean: clean
+<<<<<<< HEAD
 	/bin/rm -f $(NAME).a
+=======
+	/bin/rm -f $(NAME)
+>>>>>>> 4cceb9c01df4dac5afd1dcd8547e8666ea97e75c
 
 re: fclean all
