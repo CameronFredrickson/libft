@@ -12,6 +12,16 @@
 
 #include <stdlib.h>
 
+/*
+** Converts an integer in a base (2-16) to a string representation of its value
+
+** @param 	an int representing the value to be converted to a string
+** @param 	an int representing the base of the number system the value
+**			resides in
+
+** @return	a string representation of the value param
+*/
+
 static int	ft_intlen_base(int value, int base)
 {
 	int		len;
