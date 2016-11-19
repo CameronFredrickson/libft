@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/*
+** Gives the length of a long int 
+
+** @param 	a long
+
+** @return	an int representing the length of the param
+*/
+
 long	int_len(long n)
 {
 	int		count;
