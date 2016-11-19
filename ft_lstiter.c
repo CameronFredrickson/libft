@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/*
+** Iterates through a list applying the param f to each link in the list
+
+** @param 	a pointer to a node in the list
+** @param 	a pointer to a function applied to each node
+*/
+
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	while (lst)
