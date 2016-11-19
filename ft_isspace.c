@@ -13,14 +13,12 @@
 #include "libft.h"
 
 /*
-** Checks if the int is white-space character '\t', '\n', '\v', '\r', '\f', or ' '
-
+** Checks if the int is white-space character: '\t', '\n', '\v', '\r', '\f',
+** or ' '
 ** @param 	an int
-
 ** @return	1: if the param is an ascii value 9, 10, 11, 12, 13, or 32
 **			0: otherwise
 */
-
 
 int		ft_isspace(int c)
 {

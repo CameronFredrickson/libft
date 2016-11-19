@@ -13,10 +13,8 @@
 #include "libft.h"
 
 /*
-** Gives the length of a long int 
-
+** Gives the length of a long int
 ** @param 	a long
-
 ** @return	an int representing the length of the param
 */
 

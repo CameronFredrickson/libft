@@ -11,10 +11,8 @@
 /* ************************************************************************** */
 
 /*
-** Checks if the int is alphabetic ascii value 'a'-'z', or 'A'-'Z' 
-
+** Checks if the int is alphabetic ascii value 'a'-'z', or 'A'-'Z'
 ** @param 	an int
-
 ** @return	1: if the param is an ascii value 65-90 or 97-122
 **			0: otherwise
 */

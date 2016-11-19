@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/*
+** boom
+** @param 	a pointer to a node in the list
+** @param 	a pointer to a function applied to each node, using malloc to
+**			create a new node
+*/
+
 void	*ft_memset(void *str, int c, size_t n)
 {
 	unsigned char	*new;
@@ -20,9 +27,6 @@ void	*ft_memset(void *str, int c, size_t n)
 	new = (unsigned char *)str;
 	index = 0;
 	while (index < n)
-	{
-		new[index] = (char)c;
-		index++;
-	}
+		new[index++] = (unsigned char)c;
 	return (str);
 }

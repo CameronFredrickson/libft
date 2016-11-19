@@ -14,9 +14,7 @@
 
 /*
 ** Converts the string param to an int representation
-
 ** @param 	a string to be converted to int
-
 ** @return	an int representing the string param
 */
 

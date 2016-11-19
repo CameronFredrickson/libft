@@ -14,7 +14,6 @@
 
 /*
 ** Writes zeros to each byte in a byte string
-
 ** @param 	a byte string
 ** @param	the number of bytes in string
 */

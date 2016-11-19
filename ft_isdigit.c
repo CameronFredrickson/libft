@@ -11,10 +11,8 @@
 /* ************************************************************************** */
 
 /*
-** Checks if the int is a numeric ascii value '0'-'9' 
-
+** Checks if the int is a numeric ascii value '0'-'9'
 ** @param 	an int
-
 ** @return	1: if the param is an ascii value 48-57
 **			0: otherwise
 */
