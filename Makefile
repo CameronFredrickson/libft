@@ -41,7 +41,7 @@ SOURCE  = 	ft_memset.c		ft_memalloc.c	ft_lstnew.c				\
 			ft_toupper.c	\
 			ft_tolower.c
 
-HEADER = libft.h
+HEADERS = includes
 
 OBJS = 	$(SOURCE:.c=.o)
 
@@ -58,7 +58,7 @@ LIBFLAG = -L
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(CFLAGS) $(SOURCE)
+	$(CC) $(CFLAGS) $(SOURCE) -I $(HEADERS)
 	ar -rc $(NAME).a $(OBJS)
 
 clean:
