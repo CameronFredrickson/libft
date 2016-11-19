@@ -14,6 +14,7 @@
 
 /*
 ** Deletes a node from the list
+**
 ** @param 	the address of the pointer to head if the list
 ** @param 	a pointer to a function used to free the members of the node in
 **			the list

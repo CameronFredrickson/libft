@@ -11,8 +11,10 @@
 /* ************************************************************************** */
 
 /*
-** Checks if the int is a printable ascii value ' '-'~'
+** Checks if the int is a printable ascii value ' ' - '~'
+**
 ** @param 	an int
+**
 ** @return	1: if the param is an ascii value 32-126
 **			0: otherwise
 */
