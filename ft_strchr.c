@@ -15,10 +15,10 @@
 /*
 ** Locates the first occurence of a character in a string
 **
-** @param	the string to be searched 
+** @param	the string to be searched
 ** @param	the character value to be located
 **
-** @return	a string with the located character at the starting address 
+** @return	a string with the located character at the starting address
 **			of the string, otherwise NULL is returned
 */
 

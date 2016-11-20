@@ -17,7 +17,7 @@
 **
 ** @param	the character string to be reversed
 **
-** @return	the reversed character string 
+** @return	the reversed character string
 */
 
 char	*ft_reverse_str(char *s)

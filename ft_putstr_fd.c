@@ -16,7 +16,7 @@
 ** Writes a character string to a given file descriptor
 **
 ** @param	the character string to be written to a file
-** @param	the file descriptor the character string will be written to 
+** @param	the file descriptor the character string will be written to
 */
 
 void	ft_putstr_fd(char const *s, int fd)
