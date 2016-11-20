@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/*
+** Clears a string by setting all of the character values to 0
+**
+** @param	string to clear (set to 0)
+*/
+
 void	ft_strclr(char *s)
 {
 	while (*s)

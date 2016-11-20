@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/*
+** Frees a string a set the character pointer to NULL
+**
+** @param	string to free
+*/
+
 void	ft_strdel(char **as)
 {
 	free(*as);
