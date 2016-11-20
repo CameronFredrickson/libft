@@ -23,6 +23,8 @@ void	ft_putendl(char const *s)
 	unsigned int	i;
 	char			c;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
 	{
