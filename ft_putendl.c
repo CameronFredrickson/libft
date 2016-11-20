@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/*
+** Outputs a string to the standard output
+**
+** @param	string to be written
+*/
+
 void	ft_putendl(char const *s)
 {
 	unsigned int	i;

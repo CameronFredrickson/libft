@@ -17,7 +17,7 @@
 **
 ** @param 	a long
 **
-** @return	an int representing the length of the param
+** @return	a long int representing the length of the param
 */
 
 long	int_len(long n)
