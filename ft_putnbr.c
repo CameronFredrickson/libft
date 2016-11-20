@@ -52,7 +52,7 @@ static void		clear_buf(char *s, int size)
 }
 
 /*
-** Writes an int to the standard input
+** Writes the int to the standard input
 **
 ** @param 	an int to be written
 */
