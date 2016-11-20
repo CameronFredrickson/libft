@@ -15,7 +15,7 @@
 /*
 ** Writes a string to a file
 **
-** @param	the string to be written 
+** @param	the string to be written
 ** @param	the file descriptor the string will be written to
 */
 

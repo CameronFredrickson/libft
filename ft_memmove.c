@@ -21,10 +21,10 @@
 ** I want to copy 'a', 'b', 'c' into memory contatining 'c', 'd', 'e'
 ** (these locations in memory overlap)
 **
-**         | c | d | e | 
+**         | c | d | e |
 ** | a | b | c |
 **
-** If 'a' is copied to the location conatining 'c', 
+** If 'a' is copied to the location conatining 'c',
 ** I will not be able to copy 'c' to the location containing 'e'
 **
 **         | c | d | e |
@@ -33,7 +33,7 @@
 **
 ** After 'a' is copied:
 **
-**         | a | d | e | 
+**         | a | d | e |
 ** | a | b | a |
 **
 ** the value of at location of 'c' is now 'a'.
@@ -47,13 +47,13 @@
 **         | c | d | e |
 ** | a | b | c |
 **
-**         | c | d | c | 
+**         | c | d | c |
 ** | a | b | c |
 **
-**         | c | b | c | 
+**         | c | b | c |
 ** | a | b | c |
 **
-**         | a | b | c | 
+**         | a | b | c |
 ** | a | b | a |
 **
 ** @param	byte string to be copied
@@ -62,7 +62,6 @@
 **
 ** @return	the newly copied byte string
 */
-
 
 static void		*reverse_memcpy(void *dest, void *src, size_t len)
 {
