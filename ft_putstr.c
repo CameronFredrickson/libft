@@ -12,11 +12,19 @@
 
 #include "libft.h"
 
+/*
+** Writes a character string to the standard output
+**
+** @param	the character string to be written
+*/
+
 void	ft_putstr(char const *s)
 {
 	unsigned int	i;
 	char			c;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
 	{
