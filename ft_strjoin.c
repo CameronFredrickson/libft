@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+** Produces an allocated string as a result of the concatenation of two strings
+**
+** @param	string to be joined
+** @param	string to be joined
+**
+** @return	the newly concatenated string, however if the allocation fails
+**			NULL is returned
+*/
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*cat;
