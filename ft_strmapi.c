@@ -30,6 +30,8 @@ char	*ft_strmapi(char const *s,
 	char			*new;
 	unsigned int	i;
 
+	if (!s)
+		return (NULL);
 	if (!(new = ft_strnew(ft_strlen(s))))
 		return (NULL);
 	i = 0;

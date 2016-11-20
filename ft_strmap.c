@@ -28,6 +28,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*new;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	if (!(new = ft_strnew(ft_strlen(s))))
 		return (NULL);
 	i = 0;
