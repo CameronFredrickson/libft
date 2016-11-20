@@ -15,6 +15,7 @@
 /*
 ** Frees the memory at the address passed to the function and
 ** sets the value to NULL
+**
 ** @param an address of an area in memory
 */
 

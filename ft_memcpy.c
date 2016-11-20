@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+** Copies n number of bytes from one byte string to another
+**
+** @param	byte string to be copied
+** @param	byte string copy
+** @param	the number of bytes to be copied
+**
+** @return	the newly copied byte string
+*/
+
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*dest_str;
