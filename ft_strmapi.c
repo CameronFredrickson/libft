@@ -12,14 +12,25 @@
 
 #include "libft.h"
 
+/*
+** Applies the function f to each character of the given string in order to
+** create a newly allocated string
+**
+** @param	the string to map
+** @param	function used to modify each character in the string
+**			@param	index of the string to be modified
+**			@param	the character to be modified
+**
+** @return	the newly mapped string
+*/
+
 char	*ft_strmapi(char const *s,
 					char (*f)(unsigned int, char))
 {
 	char			*new;
 	unsigned int	i;
 
-	new = ft_strnew(ft_strlen(s));
-	if (!new)
+	if (!(new = ft_strnew(ft_strlen(s))))
 		return (NULL);
 	i = 0;
 	while (s[i])

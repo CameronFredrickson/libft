@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+** Compares up to n characters between the source and destination strings
+**
+** @param	the string to be compared
+** @param	the string to be compared
+** @param	the number of characters to be compared
+**
+** @return	the differnce in the values of the characters compared
+*/
+
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned char	*cast1;
