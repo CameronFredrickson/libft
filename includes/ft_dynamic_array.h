@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _FT_DYNAMIC_ARRAY
-# define _FT_DYNAMIC_ARRAY
+#ifndef _FT_DYNAMIC_ARRAY_H
+# define _FT_DYNAMIC_ARRAY_H
 # include "libft.h"
 
-typedef	struct 	s_dynamic_arr
+typedef	struct	s_dynamic_arr
 {
 	char		*array;
 	size_t		used;

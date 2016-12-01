@@ -13,10 +13,10 @@
 #include "ft_dynamic_array.h"
 
 /*
-** Initializes a pointer to t_dynamic_arr with the proper members 
+** Initializes a pointer to t_dynamic_arr with the proper members
 **
 ** @param	pointer to t_dynamic_arr to be initailized
-** @param	size to initalize the pointer to t_dynamic_arr with 
+** @param	size to initalize the pointer to t_dynamic_arr with
 **
 ** @return	the initialized pointer to t_dynamic_arr or 0 if malloc fails
 **			and returns a NULL pointer
@@ -32,14 +32,14 @@ t_dynamic_arr	*init_arr(t_dynamic_arr *arr, size_t initial_size)
 }
 
 /*
-** Initializes a pointer to t_dynamic_arr with the proper members 
+** Inserts a new character into the dynamic array
 **
 ** @param	pointer to t_dynamic_arr to add new element to
 ** @param	character to be added to dynamic array
 **
 ** @return	0: if malloc fails and returns a NULL pointer
 **			1: if the insertion is successful
-*/		
+*/
 
 int				insert_arr(t_dynamic_arr *arr, char c)
 {
