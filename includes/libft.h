@@ -6,7 +6,7 @@
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/21 12:59:00 by cfredric          #+#    #+#             */
-/*   Updated: 2016/10/01 10:58:10 by cfredric         ###   ########.fr       */
+/*   Updated: 2016/12/02 11:52:08 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ void				ft_print_binary_octet(unsigned char octet);
 char				*ft_reverse_str(char *s);
 char				*ft_itoa_base(int value, int base);
 
-t_dynamic_arr	*init_arr(t_dynamic_arr *arr, size_t initial_size);
-int				insert_arr(t_dynamic_arr *arr, char c);
-void			free_arr(t_dynamic_arr *arr);
+t_dynamic_arr		*init_arr(t_dynamic_arr *arr, size_t initial_size);
+int					insert_arr(t_dynamic_arr *arr, char c);
+void				free_arr(t_dynamic_arr *arr);
 #endif
