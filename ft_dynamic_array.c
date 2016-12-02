@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_dynamic_array.h"
+#include "libft.h"
 
 /*
 ** Initializes a pointer to t_dynamic_arr with the proper members
