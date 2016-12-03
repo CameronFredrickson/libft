@@ -6,19 +6,19 @@
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 19:06:07 by cfredric          #+#    #+#             */
-/*   Updated: 2016/09/23 19:06:08 by cfredric         ###   ########.fr       */
+/*   Updated: 2016/12/02 16:15:59 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Locates the first occurence of the character value c in the string s
+** Locates the last occurence of the character value c in the string s
 **
 ** @param	the string to be searched
 ** @param	the charater to be searched for
 **
-** @return	a pointer to the first location of the character c in the string s
+** @return	a pointer to the last location of the character c in the string s
 **			if the character c is not found within the string s a NULL pointer
 **			is returned
 */
