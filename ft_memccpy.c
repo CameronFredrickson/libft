@@ -6,7 +6,7 @@
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/22 20:36:29 by cfredric          #+#    #+#             */
-/*   Updated: 2016/09/22 20:36:29 by cfredric         ###   ########.fr       */
+/*   Updated: 2016/12/01 21:40:45 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,5 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		dst_cast++;
 		src_cast++;
 	}
-	dst_cast = NULL;
-	return (dst_cast);
+	return (NULL);
 }

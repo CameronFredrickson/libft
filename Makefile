@@ -28,7 +28,7 @@ SOURCE  = 	ft_memset.c		ft_memalloc.c	ft_lstnew.c				\
 			ft_strlcat.c	ft_strtrim.c	\
 			ft_strchr.c		ft_strsplit.c	ft_dynamic_array.c		\
 			ft_strrchr.c	ft_itoa.c		\
-			ft_strstr.c		ft_putchar.c	\
+			ft_strstr.c		ft_putchar.c	get_next_line.c			\
 			ft_strnstr.c	ft_putstr.c		\
 			ft_strcmp.c		ft_putendl.c	\
 			ft_strncmp.c	ft_putnbr.c		\

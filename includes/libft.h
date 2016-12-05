@@ -23,13 +23,6 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-typedef	struct		s_dynamic_arr
-{
-	char			*array;
-	size_t			used;
-	size_t			size;
-}					t_dynamic_arr;
-
 void				*ft_memset(void *str, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
@@ -98,8 +91,35 @@ unsigned char		ft_setbit(unsigned char val, unsigned char nth_bit);
 void				ft_print_binary_octet(unsigned char octet);
 char				*ft_reverse_str(char *s);
 char				*ft_itoa_base(int value, int base);
+/*
+** DYNMAIC ARRAY
+*/
+typedef	struct		s_dynamic_arr
+{
+	char			*array;
+	size_t			used;
+	size_t			size;
+}					t_dynamic_arr;
 
 t_dynamic_arr		*init_arr(t_dynamic_arr *arr, size_t initial_size);
 int					insert_arr(t_dynamic_arr *arr, char c);
 void				free_arr(t_dynamic_arr *arr);
+/*
+** GET_NEXT_LINE
+*/
+# include <fcntl.h>
+# define BUFF_SIZE 47
+# define FCA file->content->array
+# define FCS file->content->size
+# define FCU file->content->used
+
+typedef	struct		s_file
+{
+	t_dynamic_arr	*content;
+	int				fd;
+	struct s_file	*next;
+	struct s_file	*prev;
+}					t_file;
+
+int					get_next_line(const int fd, char **line);
 #endif
