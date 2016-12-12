@@ -6,7 +6,7 @@
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/24 19:06:16 by cfredric          #+#    #+#             */
-/*   Updated: 2016/10/24 19:06:16 by cfredric         ###   ########.fr       */
+/*   Updated: 2016/12/11 16:53:20 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,12 @@ static int	ft_intlen_base(int value, int base)
 
 char	*ft_itoa_base(int value, int base)
 {
-	char	*base16 = "0123456789ABCDEF";
+	char	*base16;
 	char	*result;
 	int		len;
 	long	l_value;
 
+	base16 = "0123456789ABCDEF";
 	l_value = value;
 	len = ft_intlen_base(value, base);
 	result = (char *)malloc(sizeof(char) * (len + 1));
