@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
+/*   ft_itoa_base_lower_case.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/10/24 19:06:16 by cfredric          #+#    #+#             */
-/*   Updated: 2016/12/12 20:24:11 by cfredric         ###   ########.fr       */
+/*   Created: 2016/12/12 20:12:07 by cfredric          #+#    #+#             */
+/*   Updated: 2016/12/12 20:24:22 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@
 ** @param 	an int representing the base of the number system the value
 **			resides in
 **
-** @return	a string representation of the value param
+** @return	a string representation of the value param (using lower case
+**			letters in bases 11-16)
 */
 
 static int	ft_intlen_base(int value, int base)
@@ -46,7 +47,7 @@ char	*ft_itoa_base(int value, int base)
 	int		len;
 	long	l_value;
 
-	base16 = "0123456789ABCDEF";
+	base16 = "0123456789abcdef";
 	l_value = value;
 	len = ft_intlen_base(value, base);
 	result = (char *)malloc(sizeof(char) * (len + 1));

@@ -6,7 +6,7 @@
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/21 12:59:00 by cfredric          #+#    #+#             */
-/*   Updated: 2016/12/02 11:52:08 by cfredric         ###   ########.fr       */
+/*   Updated: 2016/12/12 20:25:16 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,7 @@ unsigned char		ft_setbit(unsigned char val, unsigned char nth_bit);
 void				ft_print_binary_octet(unsigned char octet);
 char				*ft_reverse_str(char *s);
 char				*ft_itoa_base(int value, int base);
+char				*ft_itoa_base_lower_case(int value, int base);
 /*
 ** DYNMAIC ARRAY
 */

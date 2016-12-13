@@ -6,29 +6,29 @@
 #    By: cfredric <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/21 09:35:23 by cfredric          #+#    #+#              #
-#    Updated: 2016/10/05 13:58:33 by cfredric         ###   ########.fr        #
+#    Updated: 2016/12/12 20:26:16 by cfredric         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft
 
-SOURCE  = 	ft_memset.c		ft_memalloc.c	ft_lstnew.c				\
-			ft_bzero.c		ft_memdel.c		ft_lstdelone.c			\
-			ft_memcpy.c		ft_strnew.c		ft_lstdel.c				\
-			ft_memccpy.c	ft_strdel.c		ft_lstadd.c				\
-			ft_memmove.c	ft_strclr.c		ft_lstiter.c			\
-			ft_memchr.c		ft_striter.c	ft_lstmap.c				\
-			ft_memcmp.c		ft_striteri.c							\
-			ft_strlen.c		ft_strmap.c		ft_isspace.c			\
-			ft_strdup.c		ft_strmapi.c	ft_intlen.c				\
-			ft_strcpy.c		ft_strequ.c		ft_setbit.c				\
-			ft_strncpy.c	ft_strnequ.c	ft_print_binary_octet.c	\
-			ft_strcat.c		ft_strsub.c		ft_reverse_str.c		\
-			ft_strncat.c	ft_strjoin.c	ft_itoa_base.c			\
-			ft_strlcat.c	ft_strtrim.c	\
-			ft_strchr.c		ft_strsplit.c	ft_dynamic_array.c		\
+SOURCE  = 	ft_memset.c		ft_memalloc.c	ft_lstnew.c					\
+			ft_bzero.c		ft_memdel.c		ft_lstdelone.c				\
+			ft_memcpy.c		ft_strnew.c		ft_lstdel.c					\
+			ft_memccpy.c	ft_strdel.c		ft_lstadd.c					\
+			ft_memmove.c	ft_strclr.c		ft_lstiter.c				\
+			ft_memchr.c		ft_striter.c	ft_lstmap.c					\
+			ft_memcmp.c		ft_striteri.c								\
+			ft_strlen.c		ft_strmap.c		ft_isspace.c				\
+			ft_strdup.c		ft_strmapi.c	ft_intlen.c					\
+			ft_strcpy.c		ft_strequ.c		ft_setbit.c					\
+			ft_strncpy.c	ft_strnequ.c	ft_print_binary_octet.c		\
+			ft_strcat.c		ft_strsub.c		ft_reverse_str.c			\
+			ft_strncat.c	ft_strjoin.c	ft_itoa_base.c				\
+			ft_strlcat.c	ft_strtrim.c	ft_itoa_base_lower_case.c	\
+			ft_strchr.c		ft_strsplit.c	ft_dynamic_array.c			\
 			ft_strrchr.c	ft_itoa.c		\
-			ft_strstr.c		ft_putchar.c	get_next_line.c			\
+			ft_strstr.c		ft_putchar.c	get_next_line.c				\
 			ft_strnstr.c	ft_putstr.c		\
 			ft_strcmp.c		ft_putendl.c	\
 			ft_strncmp.c	ft_putnbr.c		\
