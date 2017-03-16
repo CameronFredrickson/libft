@@ -6,11 +6,11 @@
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 19:02:52 by cfredric          #+#    #+#             */
-/*   Updated: 2016/11/30 19:02:53 by cfredric         ###   ########.fr       */
+/*   Updated: 2017/03/16 10:38:50 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_dynamic_array.h"
 
 /*
 ** Initializes a pointer to t_dynamic_arr with the proper members

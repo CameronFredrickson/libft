@@ -6,11 +6,11 @@
 /*   By: cfredric <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/22 21:03:49 by cfredric          #+#    #+#             */
-/*   Updated: 2016/11/22 21:03:51 by cfredric         ###   ########.fr       */
+/*   Updated: 2017/03/16 10:38:09 by cfredric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "get_next_line.h"
 
 /*
 ** Frees a file node and sets the head appropiately if necessary
